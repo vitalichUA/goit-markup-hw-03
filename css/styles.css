@@ -8,6 +8,25 @@
   --accent-color: #2196f3;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -37,7 +56,40 @@ body {
   font-family: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* -----HEADER------ */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -59,6 +111,28 @@ body {
   color: var(--accent-color);
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+  padding-left: 0px;
+}
+
+.header-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -75,6 +149,14 @@ body {
   color: var(--accent-color);
 }
 
+.header-contacts {
+  margin-left: auto;
+}
+
+.contacts:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -88,7 +170,11 @@ body {
 
 /* ----Hero-----*/
 
+.hero-container {
+}
+
 .hero-title {
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -101,6 +187,9 @@ body {
 }
 
 .hero-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -111,6 +200,19 @@ body {
 }
 
 /* -------Benefits---------- */
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-list {
+  display: flex;
+  align-items: center;
+}
+
+.benefits-item:nth-child(n + 2) {
+  margin-left: 30px;
+}
 
 .benefits-title {
   font-weight: 700;
@@ -119,6 +221,7 @@ body {
 }
 
 .benefits-text {
+  margin-top: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -127,13 +230,43 @@ body {
 
 /* -----Work------- */
 
+.work-container > .work-list {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.work-item:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
 /* ------Team------- */
+
+.team-container {
+}
 
 .team-bgc {
   background-color: var(--secondary-background-color);
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.team-list > li:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.team-content {
+  padding: 10px;
+}
+
 .team-title {
+  margin-top: 50px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -143,6 +276,7 @@ body {
 }
 
 .team-text {
+  margin-top: 10px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -153,6 +287,8 @@ body {
 /* ------Footer------- */
 
 .footer {
+  padding: 60px 15px 60px;
+
   background-color: var(--third-background-color);
 }
 
@@ -166,6 +302,14 @@ body {
 
 .address {
   font-style: normal;
+}
+
+.footer-list {
+  margin-top: 20px;
+}
+
+.footer-item:nth-child(n + 2) {
+  padding-top: 9px;
 }
 
 .footer-address {
@@ -194,6 +338,19 @@ body {
 
 /* --------Portfolio-------- */
 
+.menu-container {
+  padding-top: 94px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item:nth-child(n + 2) {
+  margin-left: 8px;
+}
+
 .menu-btn {
   font-weight: 500;
   font-size: 16px;
@@ -209,6 +366,28 @@ body {
   background-color: var(--accent-color);
 }
 
+.portfolio-container {
+  padding-top: 34px;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  margin-left: 30px;
+}
+
+.portfolio-item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.container-text {
+  padding: 20px 24px;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -218,6 +397,7 @@ body {
 }
 
 .portfolio-text {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
