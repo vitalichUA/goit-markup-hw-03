@@ -45,6 +45,8 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -78,11 +80,12 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -173,16 +176,13 @@ img {
 
 /* ----Hero-----*/
 
-.hero-container {
+.hero-section {
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 280px;
-  padding-left: 238px;
-  padding-right: 238px;
-  text-align: center;
+  padding: 200px 0;
 }
 
 .hero-title {
+  margin: 0 auto;
   max-width: 695px;
   margin-bottom: 30px;
   font-weight: 900;
@@ -190,15 +190,15 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 
   color: var(--secondary-text-colof);
 }
 
 .hero-btn {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 200;
+  margin: 0 auto;
+  width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
@@ -210,6 +210,11 @@ img {
 }
 
 /* -------Benefits---------- */
+
+.benefits-section {
+  padding-bottom: 0;
+}
+
 .benefits-container {
   display: flex;
   flex-wrap: wrap;
@@ -244,21 +249,16 @@ img {
 
 .work-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: 50px;
   margin-left: -30px;
 }
 
-.work-item:not(:first-child) {
-  /* flex-basis: calc(100% / 3 - 30px); */
+.work-item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
 }
 
 /* ------Team------- */
-
-.team-container {
-}
 
 .team-bgc {
   background-color: var(--secondary-background-color);
@@ -394,13 +394,13 @@ img {
 
 .portfolio-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
 .portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
