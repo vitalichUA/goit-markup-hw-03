@@ -37,6 +37,10 @@ body {
   color: var(--primary-title-color);
 }
 
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
 .primary-title {
   font-weight: 700;
   font-size: 36px;
@@ -94,7 +98,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .logo {
@@ -233,7 +236,8 @@ img {
 
 .benefits-title {
   font-weight: 700;
-  font-size: 1.14;
+  font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
@@ -358,13 +362,15 @@ img {
 
 /* --------Portfolio-------- */
 
-.menu-container {
+.menu-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .menu-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
   margin-left: -8px;
 }
 
@@ -373,7 +379,9 @@ img {
 }
 
 .menu-btn {
+  padding: 6px 22px;
   font-weight: 500;
+  border: none;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
@@ -385,11 +393,6 @@ img {
 .menu-btn:focus {
   color: var(--secondary-text-colof);
   background-color: var(--accent-color);
-}
-
-.portfolio-container {
-  padding-top: 34px;
-  padding-bottom: 90px;
 }
 
 .portfolio-list {
@@ -408,6 +411,7 @@ img {
 .container-text {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio-title {
