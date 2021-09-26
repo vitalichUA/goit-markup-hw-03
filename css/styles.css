@@ -230,7 +230,7 @@ img {
 }
 
 .benefits-item {
-  flex-basis: calc (100% / 4 - 30px);
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 
@@ -311,7 +311,7 @@ img {
 /* ------Footer------- */
 
 .footer {
-  padding: 60px 15px 60px;
+  padding: 60px 0px 60px;
 
   background-color: var(--third-background-color);
 }
@@ -333,7 +333,7 @@ img {
 }
 
 .footer-item:nth-child(n + 2) {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
 .footer-address {
